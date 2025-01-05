@@ -253,10 +253,10 @@ th {
 /* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂªÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â CSS ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ */
 
 html {
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.05rem;
   line-height: 1.6;
-  font-size: 16px;
-  color: #444444;
+  font-size: 15px;
+  color: #000000;
 }
 
 a:hover {
@@ -443,7 +443,7 @@ table {
 }
 
 .ranking-box .recommend .check-list li strong {
-  background: linear-gradient(transparent 50%, #fff47d 0%);
+  background: linear-gradient(transparent 50%, #ffdcb2 0%);
 }
 
 .ranking-box .banner {
@@ -559,8 +559,8 @@ table {
 }
 
 .ranking-box .action .btn-official {
-  background-image: -webkit-linear-gradient(45deg, #ffc107 0%, #f76a35 100%);
-  border: 2px solid #ff8707;
+  background-image: -webkit-linear-gradient(45deg, #ff76a0 0%, #fc4062 100%);
+  border: 2px solid #fc4062;
 }
 
 .ranking-box .summary {
@@ -1507,12 +1507,13 @@ footer .copyright {
 }
 
 .extra_point h1 img {
-  width: 80px;
+  margin-right: 10px;
+  width: 50px;
 }
 
 .extra_point h1 span {
-  padding: 12px 18px;
-  background-color: #1e90ff;
+  padding: 9px 18px;
+  background-color: #ff8a00;
   color: #fff;
   font-weight: bold;
   border-radius: 40px;
@@ -1543,7 +1544,7 @@ footer .copyright {
 .extra_point table tr th {
   text-align: center;
   color: #fff;
-  background-color: #1e90ff;
+  background-color: #ff8a00;
   padding: 8px;
   border-style: solid;
   border-width: 2px;
@@ -1553,7 +1554,7 @@ footer .copyright {
 
 .extra_point table tr td {
   text-align: center;
-  background-color: #edf6ff;
+  background-color: #fff8ef;
   padding: 8px;
   border-style: solid;
   border-width: 2px;
@@ -1673,7 +1674,7 @@ footer .copyright {
   width: 100%;
   display: block;
 
-  background-image: -webkit-linear-gradient(45deg, #ffc107 0%, #f76a35 100%);
+  background-image: -webkit-linear-gradient(45deg, #ff76a0 0%, #fc4062 100%);
 }
 
 .sp_rank {
@@ -1764,9 +1765,24 @@ footer .copyright {
 }
 .text {
   font-size: 1.3rem;
-  margin-top: 8px;
 }
 .text quote {
   text-align: right;
   font-size: 1.2rem;
+}
+
+.desktop-image {
+  display: none;
+}
+.mobile-image {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .desktop-image {
+    display: block;
+  }
+  .mobile-image {
+    display: none;
+  }
 }
